@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="autor" content="Cynthia Bampi">
+    <title>Delicias Low Carb | Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <h1 class="logo">Delicias Low Carb</h1>
+        
+		
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav" style="text-align:center;">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="macro.html">Macros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contato</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+    <div class="container col-md-12">
+        <div class="container">
+        <div class="section">
+            <div class="col span_2_of_3">
+	<form id="calorie-calculator">
+        
+        
+        <h2 class="form-title">Calculadora de Calorias Diarias</h2>
+        <div class="form-group col-md-6">
+            <label for="age">Idade</label>
+            <input class="form-control" type="number" name="age" id="age" placeholder="Coloque sua Idade" required>
+        </div>        
+          <span></span>
+        <div class="form-group col-md-6">
+            <label for="sex">Sexo</label>
+            <div class="form-control radio-group">
+                
+                <input type="radio" name="sex" value="male" id="male" checked="checked"> <label for="male">Masculino</label>
+                <input type="radio" name="sex" value="female" id="female"> <label for="female">Feminino</label>
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label>Peso (Kg)</label>
+          <input class="form-control" type="number" name="weight" id="weight" placeholder="Entre seu Peso em Kilos" required>
+        </div>
+        <span></span>
+         
+        <div class="form-group col-md-6">
+         <label >Altura (cm)</label>
+            <div class="form-group">
+          <input type="number" name="inches" id="inches" placeholder="Entre sua altura em Cm" required>
+        </div>
+        </div>
+        <span></span>
+        <div class="form-group col-md-6">
+          <label>Nivel de Atividade</label>
+          <select class="form-control" name="activity_level" id="activity_level" required>
+            <option value="">Selecione seu Nivel de Atividade</option>
+            <option value="1.2">Pouco a nenhum Exercicio</option>
+            <option value="1.375">Leve Exercicio(1−3 dias por semana)</option>
+            <option value="1.55">Moderado exercicio (3−5 dias por semana)</option>
+            <option value="1.725">Intenso exercicio (6−7 dias por semana)</option>
+            <option value="1.9">Extremamente Intenso exercicio (duas vezes ao dia, extremamente intenso exercicio)</option>
+          </select>
+            </div>
+          <span></span>
+            <div class="form-group col-md-6">
+          <label>Escolhe seu Objetivo:</label>
+          <select class="form-control " name="gain_loss_amount" id="gain_loss_amount" required>
+            <option value="">Selecione seu Objetivo</option>
+            <option value="-1000">Perder 1 kg por semana</option>
+            <option value="-750">Perder 2 Kilos por semana
+            <option value="-500">Perder 1 kg por Mes</option>
+            <option value="-250">Perder 0.5 Kg por Semana</option>
+            <option value="0">Manter Peso</option>
+            <option value="250">Ganhar 0,5 kg por semana</option>
+            <option value="500">Ganhar 1 kg por semana</option>
+            <option value="750">Ganhar 1.5kg por semana</option>
+            <option value="1000">Ganhar 2 kg por semana</option>
+          </select>
+            </div>
+          <span></span>
+                
+         
+        
+          <div id="results"></div>
+
+    </form>
+
+    
+<form id="macro-calculator">
+    
+    <div class="form-group col-md-6">
+  <label>Proteina (g)</label>
+  <input class="form-control" type="number" name="weight" id="protein" placeholder="Protein in grams" required>
+    </div>
+    <span></span>
+    <div class="form-group col-md-6">
+  <label>Fat (g)</label>
+  <input class="form-control" type="number" name="weight" id="fat" placeholder="Fat in grams" required>
+    </div>
+        <span></span>
+    <div class="form-group col-md-6">
+  <label>Carbohydrates (g)</label>
+  <input class="form-control" type="number" name="weight" id="carbs" placeholder="Carbs in grams" required>
+        
+    </div>
+    <span></span>
+  
+  
+
+  <div id="m-results"></div>
+   <br><br><br>
+</form>
+            </div>
+            
+        <aside class="col span_1_of_3">
+                <div class="side-post2">
+                    <img id="bmiimg" src="" alt="imgbmi">
+                    
+                </div>
+
+                
+            </aside>
+        
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div id="social" class="socialmedia">
+                <a href="https://www.facebook.com/delicialowcarbblog/" target="_blank"><img src="image/face6.png" alt="facebook" /></a>
+            <a href="https://www.instagram.com/delicialowcarb/?hl=en" target="_blank"><img src="image/instahp.png" alt="instagram" /></a>
+        </div>
+            <p class="pfoot">@Copyright 2020 Cynthia Bampi</p>
+            
+    </footer>
+    <script src="js/calcs.js"></script>
+    </body>
+</html>
